@@ -59,6 +59,7 @@ static rapidjson::Value* field2json(const Message *msg, const FieldDescriptor *f
         array_size = ref->FieldSize(*msg, field);
     }
     rapidjson::Value* json = NULL;
+    json = NULL;
     if (repeated)
     {
         json = new rapidjson::Value(rapidjson::kArrayType);
